@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="script/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene stats>
+      <a-camera>
+        <a-cursor color="black"></a-cursor>
+      </a-camera>
+
+    <a-video src="vid/NF - HOPE.mp" autoplay="false" loop="true" rotation="0 0 0" width="20" height="9" position="8 10 -14" volume="0"></a-video>
+    <a-sound src="sound/ahh.wav" autoplay="false" loop="false" sound="1"></a-sound>
+    <a-box animation="property: rotation; to:0 360 0; resumeEvents:mouseenter; autoplay:false; dur:5000; easing: linear; loop:true; " src="img/pexels-photo-5489194.jpeg"    position="-1 0.5 -3" rotation="0 45 0" ></a-box>
+    <a-sphere animation="property: position; pauseEvents: mouseenter; resumeEvents:mouseleave; dir:alternate; to: 10 15 -5 dur:8000; loop:true;" position="10 1.25 -5" radius="1.25" color="#EF2D5E">
+      <a-sound src="sound/fortnite-shield-potion-fortnite-battle-royale-gaming-sound-effect-hd-sound-effects.mp3" position="0 0 0" autoplay="true" loop="true"></a-sound>
+    </a-sphere>
+    <a-box position="-9 0.5 -10" color="#ECECEC"></a-box>
+    <a-cylinder animation="property: color; to:#00FF00; dur:3000 easing: linear;" position="1 0.75 -3" radius="0.5" height="1.5" color="#FF69B4"></a-cylinder>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="30" height="20" color="#191970"></a-plane>
+    <a-plane position="0 15 -4" rotation="90 0 0" width="30" height="20" color="#191970"></a-plane>
+    <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
