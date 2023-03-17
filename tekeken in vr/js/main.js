@@ -1,21 +1,20 @@
-const redSphere = document.getElementById("js--sphere--red");
-const greenSphere = document.getElementById("js--sphere--green");
-const pinkSphere = document.getElementById("js--sphere--pink");
+const sphere = document.getElementsByClassName("js--sphere")
 const cursor = document.getElementById("js--cursor");
 const box = document.getElementsByClassName("js--box")
 
+
 //Spheres
-redSphere.onmouseenter = function(){
-    cursor.setAttribute("color", "red");
-}
-greenSphere.onmouseenter = function(){
-    cursor.setAttribute("color", "green");
-}
-pinkSphere.onmouseenter = function(){
-    cursor.setAttribute("color", "pink");
-}
+const colors = ["red", "green", "pink", "blue", "yellow", "purple", "grey", "lime", "skyblue"]; 
+const spheres = document.getElementsByClassName("js--sphere")
+Array.from(spheres).forEach((sphere, index) => {
+    sphere.onmouseleave = function () {
+        cursor.setAttribute("color", colors[index]); 
+    };
+});
 
 //Boxes
-for(let i = 0; i < boxes.length; i++){
-
+for (let i = 0; i < box.length; i++) {
+    box[i].onmouseenter = function () {
+        box[i].setAttribute("color", cursor.getAttribute("color"));
+    }
 }
