@@ -10,6 +10,7 @@ Array.from(spheres).forEach((sphere, index) => {
     sphere.onmouseleave = function () {
         cursor.setAttribute("color", colors[index]); 
     };
+    
 });
 
 //Boxes
